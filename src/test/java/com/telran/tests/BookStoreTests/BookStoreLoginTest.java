@@ -24,7 +24,7 @@ public class BookStoreLoginTest extends TestBase {
     @Test
     public void positiveAuthTest() {
         new LoginPage(driver).login(LoginData.USERNAME, LoginData.PASSWORD);
-        Assert.assertEquals(new ProfilePage(driver).getUserNameValue(), "imaksimov2");
+        Assert.assertEquals(new ProfilePage(driver).getUserNameValue(), LoginData.USERNAME);
     }
 
     @Test
