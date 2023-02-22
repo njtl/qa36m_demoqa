@@ -28,5 +28,7 @@ public class DatePickerTestPR extends TestBasePR {
 
         page.locator("//div[contains(@class, 'today')]/following-sibling::div[1]").click();
         assertThat( page.locator("#datePickerMonthYearInput")).hasValue(tomorrowDateFormatted);
+
+
     }
 }
